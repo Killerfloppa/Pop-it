@@ -32,7 +32,7 @@ game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(
 
 AutoSection:NewToggle("Gold Coin", "ToggleInfo", function(state)
 
-    if state then _G.on = true while _G.on do wait() local args = { [1] = "Gold Coin" } 
+    if state then _G.on = true while _G.on do wait()  args = { [1] = "Gold Coin" } 
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end end)
 
@@ -98,7 +98,35 @@ BuySection:NewButton("Rainbow Star", "ButtonInfo", function()
 
     local args = {
 
-    [1] = "Rainbow Star"
+    [1] = "Rainbow Star"GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end end)
+
+AutoSection:NewToggle("Rainbow Star", "ToggleInfo", function(state)
+
+    if state then _G.on = true while _G.on do wait() local args = { [1] = "Rainbow Star" } 
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end end)
+
+AutoSection:NewToggle("Gold Coin", "ToggleInfo", function(state)
+
+    if state then _G.on = true while _G.on do wait() local args = { [1] = "Gold Coin" } 
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end end)
+
+AutoSection:NewToggle("Luisi", "ToggleInfo", function(state)
+
+    if state then _G.on = true while _G.on do wait() local args = { [1] = "Luisi" } 
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end end)
+
+local BuyTab = Window:NewTab("Buy items robux")
+
+local BuySection = BuyTab:NewSection("Mario items")
+
+BuySection:NewButton("Helloshi", "ButtonInfo", function()
+
+    local args = {
+
+    [1] = "Helloshi"
 
 }
 
@@ -106,17 +134,18 @@ game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(
 
 end)
 
-BuySection:NewButton("Luisi", "ButtonInfo", function()
+BuySection:NewButton("Omb Bomb", "ButtonInfo", function()
 
     local args = {
 
-    [1] = "Luisi"
+    [1] = "Omb Bomb"
 
 }
 
-game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+game:GetService("ReplieplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
 
-endlocal Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+end)end)end)
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 
 local Window = Library.CreateLib("Pop it trading private", "Ocean")
 
